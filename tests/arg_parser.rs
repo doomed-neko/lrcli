@@ -19,3 +19,14 @@ fn test_cmd_search_invalid_args() {
     ]; // Missing artist
     cmd_search("lrcli", args).unwrap();
 }
+
+#[test]
+fn test_cmd_search_valid_args() {
+    let args = vec![
+        "-t".to_string(),
+        "Lion King".to_string(),
+        "-a".to_string(),
+        "Ghosting".to_string(),
+    ]; // Missing artist
+    cmd_search("lrcli", args).unwrap();
+}
